@@ -1,0 +1,26 @@
+input[type='text']{
+  width: fit-content;
+}
+.myButton {
+    font-family: 'Old Standard TT', serif;
+    border-radius: 20px;
+    border: rgb(139, 143, 188) 2px solid;
+    padding: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #75829F;
+    color: aliceblue;
+    width: fit-content;
+ }
+ .myButton:hover{
+    border: white 2px solid;
+ }
+ .myInput{
+    padding: 15px;
+    margin-right: 12px;
+    font-size: 18px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    color: rgb(139, 143, 188);
+ }

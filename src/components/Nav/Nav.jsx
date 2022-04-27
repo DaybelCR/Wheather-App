@@ -1,16 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Logo from '../../img/weather.png'
+import { NavLink } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import SearchBar from '../SearchBar/SearchBar';
+import s from './Nav.module.css';
 
 
 function Nav() {
   return (
-    <nav className="">
-      <Link to='/'>
-         <span className="">
-          Henry - Weather App
+    <nav className={s.nav}> 
+    
+     <NavLink exact to='/' activeClassName='selected'>
+         <span >
+         <img id="logoHenry" src={Logo} width="30" height="30" alt="" />
+          Home
         </span>
-      </Link>
-      <Link to='/about'><span>About</span></Link>
+      </NavLink>     
+       <NavLink exact to='/about' activeClassName='active'><span>About</span></NavLink>
+      <Route exact path='/'><SearchBar/></Route>
     </nav>
   );
 };

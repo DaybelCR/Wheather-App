@@ -14,8 +14,9 @@ La app va contar con cuatro rutas:
 3. components/SearchBar/SearchBar.jsx
 4. redux/actions.js
 5. redux/reducer.js
-6. components/Home.jsx
-7. components/CreateProduct/CreateProduct.jsx
+6. components/Cards/Cards.jsx
+8. components/Card/Card.jsx
+7. components/Ciudad/Ciudad.jsx
 8. components/ProductCard/ProductCard.jsx
-9. components/ProductDetail/ProductDetail.jsx
+9. components/About/About.jsx
 

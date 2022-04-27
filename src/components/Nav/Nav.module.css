@@ -1,0 +1,18 @@
+.nav{
+    background-color: #75829F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(21, 24, 125);
+    display:block;
+}
+img{
+    display: block;
+}
+
