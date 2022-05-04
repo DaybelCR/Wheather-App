@@ -1,18 +1,19 @@
 import React from 'react';
 import Card from '../Card/Card.jsx';
-import {connect} from "react-redux"
+import {connect} from "react-redux";
+import s from './Cards.module.css';
 
 
 export  function Cards(props) {
-  console.log(props.cities)
+  // console.log(props.cities)
   return (
-    <div className='cards'>
+    <div className={s.cards}>
       {props.cities?.map(c => <Card
           key={c.id}
-          max={c.max}
-          min={c.min}
+          max={c.main.temp_max}
+          min={c.main.temp_min}
           name={c.name}
-          img={c.img}
+          img={c.weather[0].icon}
           id={c.id}
         /> )}
     </div>

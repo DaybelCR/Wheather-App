@@ -1,0 +1,27 @@
+.about{
+    background-color: rgb(233, 180, 110);
+    width: 50rem;
+    margin:0 auto;
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 0;
+}
+.about h2{
+    text-align: center;
+    color: rgb(38, 25, 160);
+    margin-bottom: 0;
+}
+.parrafo{
+    margin-top: 0;
+    background-color: rgb(227, 214, 130);
+    padding: 2rem;
+    color: rgb(254, 254, 255);
+    
+}
+
+@media (max-width: 800px) {
+    .about {
+        width: 30rem;
+    }
+
+}
