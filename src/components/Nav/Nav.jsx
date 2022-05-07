@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../img/weather.png'
+import Logo from '../../assets/weather.png'
 import { NavLink } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import SearchBar from '../SearchBar/SearchBar';

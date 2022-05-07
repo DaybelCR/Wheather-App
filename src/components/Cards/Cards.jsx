@@ -10,10 +10,10 @@ export  function Cards(props) {
     <div className={s.cards}>
       {props.cities?.map(c => <Card
           key={c.id}
-          max={c.main.temp_max}
-          min={c.main.temp_min}
+          max={c.max}
+          min={c.min}
           name={c.name}
-          img={c.weather[0].icon}
+          img={c.img}
           id={c.id}
         /> )}
     </div>

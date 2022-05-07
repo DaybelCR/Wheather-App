@@ -8,7 +8,7 @@ import s from './Card.module.css';
 
 export function Card({max,min,name,id,img,deleteCity}){
 
-  // console.log(props.deleteCity(id))
+  
     // console.log(max,min,name,id)
 return(
     <div className={s.card}>

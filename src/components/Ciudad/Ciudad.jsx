@@ -4,19 +4,18 @@ import s from './Ciudad.module.css'
 
 export function Ciudad({match,cities}) {
     const idCiudad=match.params.ciudadId;
-    const ciudadFiltrada=cities.filter(c=>c.id===parseInt(idCiudad));
-     console.log(ciudadFiltrada);
-  if(ciudadFiltrada.length!==0){
+    const [ciudadFiltrada]=cities.filter(c=>c.id===parseInt(idCiudad));
+    if(ciudadFiltrada!==undefined){
     return (
       <section className={s.section} >
-          <h2>{ciudadFiltrada[0].name}</h2>
+          <h2>{`${ciudadFiltrada.name}-${ciudadFiltrada.country}`}</h2>
           <div >
-              <p>Temperatura: {ciudadFiltrada[0].main.temp} ºC</p>
-              <p>Clima: {ciudadFiltrada[0].weather[0].main}</p>
-              <p>Viento: {ciudadFiltrada[0].wind.speed} km/h</p>
-              <p>Cantidad de nubes: {ciudadFiltrada[0].clouds.all}</p>
-              <p>Latitud: {ciudadFiltrada[0].coord.lat}º</p>
-              <p>Longitud: {ciudadFiltrada[0].coord.lon}º</p>
+              <p>Temperatura: {ciudadFiltrada.temp} ºC</p>
+              <p>Clima: {ciudadFiltrada.description}</p>
+              <p>Viento: {ciudadFiltrada.wind} km/h</p>
+              <p>Cantidad de nubes: {ciudadFiltrada.clouds}</p>
+              <p>Latitud: {ciudadFiltrada.lat}º</p>
+              <p>Longitud: {ciudadFiltrada.lon}º</p>
           </div>
       </section>
     )

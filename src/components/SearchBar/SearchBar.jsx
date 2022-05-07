@@ -14,7 +14,7 @@ export  function SearchBar(props) {
    function handleChange(e){
     setCity(e.target.value)
    }
-
+ 
   return (
     <form onSubmit={(e)=>handleSubmit(e)} className={s.form}>
       <input className={s.myInput}
