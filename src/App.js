@@ -8,11 +8,9 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <main>
       <Route exact path='/' component={Cards}/>
       <Route exact path='/about' component={About}/>
       <Route path='/ciudad/:ciudadId' component={Ciudad}></Route>
-      </main>
     </div>
   );
 }

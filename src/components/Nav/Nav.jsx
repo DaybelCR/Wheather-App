@@ -9,14 +9,16 @@ import s from './Nav.module.css';
 function Nav() {
   return (
     <nav className={s.nav}> 
-    
-     <NavLink exact to='/' activeClassName='selected'>
-         <span >
-         <img id="logoHenry" src={Logo} width="30" height="30" alt="" />
-          Home
-        </span>
-      </NavLink>     
-       <NavLink exact to='/about' activeClassName='active'><span>About</span></NavLink>
+    <ul className={s.menu}>
+        <li>
+             <NavLink exact to='/' activeClassName='selected'>
+             <img id="logo" src={Logo} width="20" height="20" alt="" />
+             Home </NavLink>
+        </li>
+        <li>
+              <NavLink exact to='/about' activeClassName='selected'>About</NavLink>
+        </li>
+    </ul>
       <Route exact path='/'><SearchBar/></Route>
     </nav>
   );

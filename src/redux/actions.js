@@ -13,7 +13,7 @@ export function onSearch(ciudad){
                            id: data.id,
                            name:data.name,
                            description:data.weather[0].description,
-                           temp:data.main.temp,
+                           temp:Math.round(data.main.temp),
                            max:Math.round(data.main.temp_max),
                            min:Math.round(data.main.temp_min),
                            humidity: data.main.humidity,
@@ -30,11 +30,10 @@ export function onSearch(ciudad){
                         payload:city,
                     })
                    }else{
-                       alert('Ciudad no encontrada')
+                       alert('Ciudad no encontrada');
                    }
                }
                )
-               .catch((e)=>console.log(e))
     }
 }
 

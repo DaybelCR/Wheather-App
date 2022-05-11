@@ -11,12 +11,11 @@ code {
 }
 .selected{
   background-color: #1C6EA4;
-  padding:  0px 16px 0px 16px;
+  padding: 15px;
   color: rgb(234, 232, 228);
 }
-.active{
+/* .active{
   background-color: #1C6EA4;
   padding:  15px;
   color: rgb(234, 232, 228);
-}
-
+} */

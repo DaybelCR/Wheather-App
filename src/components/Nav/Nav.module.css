@@ -1,18 +1,32 @@
-.nav{
-    background-color: #75829F;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1px;
-    font-size: 18px;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
+.nav{
+    display: flex; 
+    background-color: #97afdf;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.menu li{
+    text-align: center;
+    padding: 15px;
+}
 a{
     text-decoration: none;
-    color: rgb(21, 24, 125);
+    color: #1C6EA4;
     display:block;
 }
-img{
-    display: block;
-}
+  
+
 
