@@ -3,6 +3,10 @@ body {
   font-family: 'Old Standard TT', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #1C6EA4;
+background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
 }
 
 code {
@@ -14,8 +18,3 @@ code {
   padding: 15px;
   color: rgb(234, 232, 228);
 }
-/* .active{
-  background-color: #1C6EA4;
-  padding:  15px;
-  color: rgb(234, 232, 228);
-} */

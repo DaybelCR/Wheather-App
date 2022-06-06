@@ -1,27 +1,37 @@
+
 .card{
-    /* background: white;
-    text-decoration: none;
-    color: #444;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    min-height: 100%;
-    border: black solid 2px; */
+    margin: 0;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(236, 234, 232);
     width:15rem;
 }
+.card:hover {
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+.card a{
+   font-size: 25px;
+   margin-bottom: 20px;
+   padding: 8px;
+}
+.card a:hover{
+    background-color: white;
+    border-radius: 15px;
+}
 button{
     background-color: rgb(181, 101, 101);
     cursor: pointer;
     align-self: flex-end;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
 }
-
-
-
-
-/* https://webdesign.tutsplus.com/es/tutorials/solving-problems-with-css-grid-and-flexbox-the-card-ui--cms-27468 */

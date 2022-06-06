@@ -6,25 +6,21 @@ import {connect} from "react-redux";
 import s from './Card.module.css';
 
 
-export function Card({max,min,temp,name,id,img,deleteCity}){
-//https://www.designspiration.com/save/955157256282911/
+export function Card({max,min,temp,name,id,img,country,deleteCity}){
+
   
 return(
     <div className={s.card}>
     <button onClick={()=>deleteCity(id)}>X</button>
-      <Link to={`/ciudad/${id}`}>
-      <img className="iconoClima" src={`http://openweathermap.org/img/wn/${img}@2x.png`} width="150" height="150" alt="logo_clima" />
-      </Link>
      
-      
-    <p>{temp}°</p>
-    <h2>{name}</h2>
+      <img className="iconoClima" src={`http://openweathermap.org/img/wn/${img}@2x.png`} width="150" height="150" alt="logo_clima" /> 
+     
+    <h1>{temp}°</h1>
 
-          <p>Min</p>
-          <p>{min}°</p>
-          <p>Max</p>
-          <p>{max}°</p>
-     
+          <h3>{`${name}-${country}`}</h3>
+          <Link to={`/ciudad/${id}`}>Ver más</Link>
+          <div><span>Min {min}°</span>
+          <span>Max {max}°</span></div>  
   </div>
 )
 }
